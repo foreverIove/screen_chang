@@ -19,7 +19,7 @@ export default defineConfig(({ command }) => {
         logger: true,
         mockPath: './src/mock',
         injectCode: `
-        import { setupProdMockServer } from '../mock/_mockProdServer';
+        import { setupProdMockServer } from '@/mock/_mockProdServer';
         setupProdMockServer();
       `,
         injectFile: resolve('src/main.ts')
